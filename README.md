@@ -7,3 +7,9 @@
 
 
 Breadth First Search mantığı 
+Genişliğin öncelik alındığı graph algoritmasıdır. Bir root seçildikten sonra alt çocuk düğümlere (children node) geçilir. Daha sonra da bir alt çoçuk düğümlere(children node) geçilir. Root ve alt düğümler birer leveldir.
+Kuyruk(Queue) veri yapısını kullanır.(FIFO ilk giren ilk çıkar)
+Her düğüm en az bir kez gezildiğinden karmaşıklık O(N)'dir.
+
+--------------
+Bu soruda bizden levelleri liste yapısıyla sınıflandırılmış halini göstermemizi istiyor. Bunun için  sonucu göstermede ans=[]'i kullaırken level'leri göstermek için currLevel=[] kullanacağız. Döngü ile ilerlerken düğüm değerlerini currLevel'e eklerken ( node = q.popleft()) ile her levele geçtiğinde currLevel'i ans=[]'e ekleyeceğiz.
